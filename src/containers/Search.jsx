@@ -43,10 +43,17 @@ const Search = () => {
         }}>
         <TextField
           fullWidth
+          inputProps={{ inputMode: "search" }}
           label="Search Users"
           id="fullWidth"
           value={query}
           onChange={handleQuery}
+          onKeyPress={(event) => {
+            if (event.key === "Enter") {
+              handleSearch();
+              event.preventDefault();
+            }
+          }}
           sx={{
             margin: "0 10px",
             width: "75%"
