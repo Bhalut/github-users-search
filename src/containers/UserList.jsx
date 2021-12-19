@@ -13,7 +13,8 @@ const UserList = ({ users }) => {
         <Box
           sx={{
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateColumns:
+              "repeat(auto-fit, minmax(min(100%, 25rem), 1fr))",
             gridAutoRows: "auto",
             gap: "1rem"
           }}>

@@ -8,11 +8,10 @@ const Layout = ({ children }) => {
       sx={{
         display: "grid",
         width: "100%",
-        height: "100%",
+        height: "100vh",
         gridTemplateColumns: "repeat(6, 1fr)",
         gap: 1,
-        gridTemplateRows:
-          "minmax(50px, 100px) minmax(200px, 1fr) minmax(200px, 1fr) minmax(50px, 100px)",
+        gridTemplateRows: "minmax(50px, 100px) 1fr minmax(50px, 100px)",
         gridTemplateAreas: `"header header header header header header"
                             ". search search search search ."
                             ". users users users users ."
