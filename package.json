@@ -1,0 +1,50 @@
+{
+  "name": "github-users-search",
+  "version": "1.0.0",
+  "description": "Website with search for github user using GitHub API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./bundler/webpack.development.js",
+    "build": "webpack --config ./bundler/webpack.production.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhalut/github-users-search.git"
+  },
+  "keywords": [
+    "react",
+    "search"
+  ],
+  "author": "Abdel Mejia <bhalut.bear@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bhalut/github-users-search/issues"
+  },
+  "homepage": "https://github.com/Bhalut/github-users-search#readme",
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.4",
+    "@mui/lab": "^5.0.0-alpha.60",
+    "@mui/material": "^5.2.4",
+    "@reduxjs/toolkit": "^1.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "html-loader": "^3.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "portfinder-sync": "^0.0.2",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
