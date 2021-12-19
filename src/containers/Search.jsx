@@ -26,7 +26,7 @@ const Search = () => {
         data: response.items,
         loading: false
       });
-      setSearching(users.loading);
+      setSearching(false);
     }
   };
 
