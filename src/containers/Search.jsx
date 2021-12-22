@@ -1,8 +1,7 @@
 import { useState } from "react";
 import UserList from "./UserList";
-import Box from "@mui/material/Box";
-import LoadingButton from "@mui/lab/LoadingButton";
-import TextField from "@mui/material/TextField";
+import { LoadingButton } from "@mui/lab";
+import { Box, TextField } from "@mui/material";
 
 const API = "/search/users";
 
@@ -17,7 +16,7 @@ const Search = () => {
 
   const handleSearch = async () => {
     if (Boolean(query)) {
-      setSearching(users.loading);
+      setSearching(true);
       const response = await (
         await fetch(`https://api.github.com${API}?q=${query}`)
       ).json();
@@ -55,8 +54,8 @@ const Search = () => {
             }
           }}
           sx={{
-            margin: "0 10px",
-            width: "75%"
+            marginRight: "10px",
+            width: "100%"
           }}
         />
         <LoadingButton

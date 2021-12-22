@@ -1,9 +1,9 @@
-import Box from "@mui/material/Box";
-import UserItem from "../components/UserItem";
+import { Box } from "@mui/material";
+import UserCard from "../components/UserCard";
 
 const UserList = ({ users }) => {
   const userList = users.data.map((user) => (
-    <UserItem user={user} key={user.id} />
+    <UserCard user={user} key={user.id} />
   ));
 
   return (
@@ -12,6 +12,7 @@ const UserList = ({ users }) => {
         <p>users found {users.count}</p>
         <Box
           sx={{
+            gridArea: "users",
             display: "grid",
             gridTemplateColumns:
               "repeat(auto-fit, minmax(min(100%, 25rem), 1fr))",

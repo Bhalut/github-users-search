@@ -1,13 +1,13 @@
-import Box from "@mui/material/Box";
+import { Link as RouterLink } from "react-router-dom";
+import { Box, Link } from "@mui/material";
 import { deepPurple } from "@mui/material/colors";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Box
       sx={{
         gridArea: "header",
-        bgcolor: deepPurple[300]
+        backgroundColor: deepPurple[400]
       }}>
       <Box
         sx={{
@@ -19,8 +19,13 @@ const Header = () => {
         }}>
         <header>
           <Link
+            component={RouterLink}
             to="/"
-            style={{ textDecoration: "none", color: deepPurple[50] }}>
+            sx={{
+              color: deepPurple[50],
+              textDecoration: "none",
+              fontSize: "1.5em"
+            }}>
             GitHub Users Search
           </Link>
         </header>

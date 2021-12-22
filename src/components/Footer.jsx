@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import { Box, Typography } from "@mui/material";
 import { deepPurple } from "@mui/material/colors";
 
 const Footer = () => {
@@ -6,7 +6,7 @@ const Footer = () => {
     <Box
       sx={{
         gridArea: "footer",
-        bgcolor: deepPurple[500]
+        backgroundColor: deepPurple[500]
       }}>
       <Box
         sx={{
@@ -16,7 +16,9 @@ const Footer = () => {
           justifyContent: "center"
         }}>
         <footer>
-          <p>Make with love</p>
+          <Typography variant="body1" sx={{ color: deepPurple[50] }}>
+            Make with love
+          </Typography>
         </footer>
       </Box>
     </Box>
